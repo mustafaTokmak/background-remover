@@ -32,10 +32,21 @@ async def root():
         "message": "Background Remover API",
         "endpoints": {
             "/docs": "API documentation",
+            "/health": "Health check endpoint",
             "/remove": "Remove background from single image",
             "/remove-batch": "Remove background from multiple images",
             "/models": "List available models"
         }
+    }
+
+
+@app.get("/health")
+async def health_check():
+    """Health check endpoint"""
+    return {
+        "status": "healthy",
+        "service": "background-remover",
+        "version": "1.0.0"
     }
 
 
