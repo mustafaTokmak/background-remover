@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+*.gif
+!PHOTO-2025-05-27-10-29-59.jpg
+!PHOTO-2025-05-27-10-29-59_no_bg.png
+no_bg/
+uploads/
+temp/
+
+# UV
+.python-version
+uv.lock
+
+# Logs
+*.log
+
+# Environment variables
+.env.local
+.env.production
