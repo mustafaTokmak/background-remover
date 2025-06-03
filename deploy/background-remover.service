@@ -1,0 +1,23 @@
+[Unit]
+Description=Background Remover API
+After=network.target
+
+[Service]
+Type=exec
+User=mustafa
+Group=mustafa
+WorkingDirectory=/home/mustafa/apps/background-remover
+Environment="PATH=/home/mustafa/.cargo/bin:/home/mustafa/apps/background-remover/.venv/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=/home/mustafa/apps/background-remover/.venv/bin/uvicorn api:app --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=10
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/home/mustafa/apps/background-remover
+
+[Install]
+WantedBy=multi-user.target
