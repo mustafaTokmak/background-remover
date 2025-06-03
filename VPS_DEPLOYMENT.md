@@ -12,10 +12,15 @@ This guide explains how to deploy the Background Remover API to your VPS using G
 
 Add these secrets to your GitHub repository (`Settings` → `Secrets and variables` → `Actions`):
 
+### For VPS Deployment:
 1. **VPS_HOST**: `5.189.174.110`
 2. **VPS_USERNAME**: `mustafa`
 3. **VPS_PORT**: `22` (or your custom SSH port)
 4. **VPS_SSH_KEY**: Your private SSH key
+
+### For Docker Hub (Optional):
+5. **DOCKER_USERNAME**: Your Docker Hub username
+6. **DOCKER_PASSWORD**: Your Docker Hub password or access token
 
 ### How to add SSH key:
 ```bash
